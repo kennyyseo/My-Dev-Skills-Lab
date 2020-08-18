@@ -8,10 +8,10 @@
   <body>
     <h1>Dev Skills</h1>
     <ul>
-      <% devskills.forEach(function(s) { %>
+      <% skills.forEach(function(s) { %>
       <li>
         <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-        <%= s.skill %> - <%= s.learned ? 'learned' : 'not learned' %>
+        <%= s.learned ? 'learned' : 'not learned' %>
       </li>
       <% }); %>
     </ul>
